@@ -11,17 +11,6 @@
     tools:context="com.example.n56j.project1.ActivityRegisterAdmin"
     android:background="@drawable/wall22">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/Register"
-        android:id="@+id/button7"
-        android:layout_alignTop="@+id/linearLayout21"
-        android:layout_toRightOf="@+id/linearLayout21"
-        android:layout_toEndOf="@+id/linearLayout21"
-        android:layout_gravity="center_horizontal"
-        android:layout_alignParentBottom="true" />
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -152,5 +141,15 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Register"
+        android:id="@+id/button7"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

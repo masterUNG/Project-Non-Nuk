@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class ActivityRegisterAdmin extends AppCompatActivity {
 
@@ -48,14 +49,36 @@ public class ActivityRegisterAdmin extends AppCompatActivity {
                     myAlert.myDialog();
 
                 } else {
-                    //No Space
 
-                }
+                    try {
+
+                        //No Space
+                        AddUserTABLE addUserTABLE = new AddUserTABLE(ActivityRegisterAdmin.this, 0);
+                        addUserTABLE.execute(urlAddUserString,
+                                userString,
+                                passwordString,
+                                phoneString,
+                                emailString);
+
+                        if (Boolean.parseBoolean(addUserTABLE.get())) {
+                            finish();
+                        } else {
+                            Toast.makeText(ActivityRegisterAdmin.this,
+                                    "Cannot Upload", Toast.LENGTH_SHORT).show();
+                        }
+
+
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                }   // if
 
             }   // onClick
         });
 
-
     }   // Main Method
+
 
 }   // Main Class

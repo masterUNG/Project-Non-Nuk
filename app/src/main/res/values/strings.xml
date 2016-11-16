@@ -27,6 +27,7 @@
     <string name="title_passwordFalse">Password ผิด</string>
     <string name="message_passwordFalse">กรุณาพิ่มพ์ Password ใหม่ Password ผิด</string>
     <string name="title_activity_service_admin">Map</string>
+    <string name="title_activity_add_edit">Map</string>
 
 
 </resources>

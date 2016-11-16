@@ -87,6 +87,11 @@ public class ActivityAdmin extends AppCompatActivity {
                     //Password True
                     Toast.makeText(ActivityAdmin.this,
                             "Welcome", Toast.LENGTH_SHORT).show();
+
+                    Intent intent = new Intent(ActivityAdmin.this, ServiceAdminActivity.class);
+                    startActivity(intent);
+                    finish();
+
                 } else {
                     //Password False
                     MyAlert myAlert = new MyAlert(ActivityAdmin.this,
